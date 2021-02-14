@@ -2,37 +2,80 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ----------------- Entry Form --------------- */
+
+.entry-form {
+  background: #75B1A9;
+  margin: 0rem 0 0rem 0;
+  padding: 2.5rem;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2.5rem 5rem 0 rgba(0, 0, 0, 0.1)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"] {
+  height: 30px;
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  padding: 5px;
+  margin-left: 5px;
+  outline-color: #42383B;
+  font-size: 14pt;
+  align-content: center;
+  vertical-align: bottom;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button[type="submit"] {
+  background-color: #4F6457;
+  color: rgb(231, 226, 226);
+  height: 41px;
+  border: 0;
+  padding: 0 20px;
+  margin-left: 5px;
+  border-radius: 0 1px 1px 0;
+  font-size: 18pt;
+}
+
+/* ----------------- Todo List --------------- */
+
+.todo-list {
+  background: #ACD0C0;
+  margin: 0rem 7rem 4rem 0rem;
+  padding: 1rem;
+  position: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2.5rem 5rem 0 rgba(0, 0, 0, 0.1);
+  max-width: 50rem;
+  min-height: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-el {
+  padding-left: 0;
+}
+
+/* ----------------- Todo item --------------- */
+
+.todo-item {
+  max-width: auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px;
+  border-bottom: 2px solid #4F6457;
 }
 
-.App-link {
-  color: #61dafb;
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type=checkbox]:checked {
+  background-color: green;
+}
+
+.todo-item>*:second-child {
+  align-self: stretch;
 }
